@@ -1,0 +1,16 @@
+<div class="container hero">
+    <h1>View 1</h1>
+
+    <p>Name:</p>
+    <input ng-model="name" name="name">
+    <ul>
+        <li ng-repeat="customer in customers | filter:name">{{ customer.name }} | {{ customer.city }}</li>
+    </ul>
+
+    <p>Add New Customer</p>
+    Name: <input ng-model="newCustomer.name" type="text" name="name">
+    City: <input ng-model="newCustomer.city" type="text" name="city" value="">
+    <button ng-click="addCustomer()" type="button" name="button">Add Customer</button>
+    <br>
+    <a href="#/view2">View 2</a>
+</div>

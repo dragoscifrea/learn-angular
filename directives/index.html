@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Using AngularJS Directives and Data Binding</title>
+
+    <script src="../libs/angular.js"></script>
+  </head>
+  <body>
+    <div class="container" ng-init="persons=[{name:'Andrei', city:'Cluj-Napoca'}, {name:'Dragos', city:'Targu-Mures'}, {name:'Andreea',city:'Cluj-Napoca'}, {name:'Tudor', city:'Tarnaveni'}]">
+      Name:
+      <br>
+      <input ng-model="person" name="person">
+      <ul>
+        <li ng-repeat="person in persons | filter:person">{{ person.name }}</li>
+      </ul>
+    </div>
+  </body>
+</html>
