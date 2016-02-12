@@ -1,22 +1,5 @@
 demoApp.controller('HomeController', function ($scope) {
-    $scope.customers = [
-        {
-            name: 'John Doe',
-            city: 'Atlanta'
-        },
-        {
-            name: 'Jane Doe',
-            city: 'New York'
-        },
-        {
-            name: 'Kevin Clark',
-            city: 'San Francisco'
-        },
-        {
-            name: 'Dragos Cifrea',
-            city: 'San Francisco'
-        }
-    ]
+    $scope.customers = [];
 
     $scope.addCustomer = function () {
         console.log('add customer clicked');
